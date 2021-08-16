@@ -1,7 +1,7 @@
 # Movies-ETL
 
 ## Background:
-Amazing Prime loves the dataset and wants to keep it updated on a daily basis. Britta needs your help to create an automated pipeline that takes in new data, performs the appropriate transformations, and loads the data into existing tables. You’ll need to refactor the code from this module to create one function that takes in the three files—Wikipedia data, Kaggle metadata, and the MovieLens rating data—and performs the ETL process by adding the data to a PostgreSQL database.
+Amazing Prime wants to keep an updated dataset on a daily basis. The goal is to create an automated pipeline that takes in new data, performs the appropriate transformations, and loads the data into existing tables. The idea is to refactor the code from this module to create one function that takes in the three files—Wikipedia data, Kaggle metadata, and the MovieLens rating data and performs the ETL process by adding the data to a PostgreSQL database.
 
 ## Goals:
 1. Deliverable 1: Write an ETL Function to Read Three Data Files
@@ -16,7 +16,7 @@ Amazing Prime loves the dataset and wants to keep it updated on a daily basis. B
 
 ## 1: Write an ETL Function to Read Three Data Files
 ### Goal: 
-    Using your knowledge of Python, Pandas, the ETL process, and code refactoring, write a function that reads in the three data files and creates three separate DataFrames.
+    Write a function that reads in the three data files and creates three separate DataFrames.
 
 ### Results:
 <img width="806" alt="Screen Shot 2021-08-15 at 10 15 21 PM" src="https://user-images.githubusercontent.com/85847344/129514501-e74a5976-e360-408a-b43c-970d08b292f7.png">
@@ -25,7 +25,7 @@ Amazing Prime loves the dataset and wants to keep it updated on a daily basis. B
 
 ## 2: Extract and Transform the Wikipedia Data
 ### Goal: 
-    Using your knowledge of Python, Pandas, the ETL process, and code refactoring, extract and transform the Wikipedia data so you can merge it with the Kaggle metadata. While extracting the IMDb IDs using a regular expression string and dropping duplicates, use a try-except block to catch errors.
+    Extract and transform the Wikipedia data so that it can be merged with the Kaggle metadata. While extracting the IMDb IDs using a regular expression string and dropping duplicates. Must use a try-except block to catch errors.
 
 ### Results:
 <img width="743" alt="Screen Shot 2021-08-15 at 10 20 35 PM" src="https://user-images.githubusercontent.com/85847344/129514784-6089b5d0-cd7e-49bc-b138-0e1e8478679b.png">
@@ -36,7 +36,7 @@ Amazing Prime loves the dataset and wants to keep it updated on a daily basis. B
 
 ##  3: Extract and Transform the Kaggle Data
 ### Goal:
-    Using your knowledge of Python, Pandas, the ETL process, and code refactoring, extract and transform the Kaggle metadata and MovieLens rating data, then convert the transformed data into separate DataFrames. Then, you’ll merge the Kaggle metadata DataFrame with the Wikipedia movies DataFrame to create the movies_df DataFrame. Finally, you’ll merge the MovieLens rating data DataFrame with the movies_df DataFrame to create the movies_with_ratings_df.
+    Extract and transform the Kaggle metadata and MovieLens rating data, then convert the transformed data into separate DataFrames. Then merge the Kaggle metadata DataFrame with the Wikipedia movies DataFrame to create the movies_df DataFrame. Finally, merge the MovieLens rating data DataFrame with the movies_df DataFrame to create the movies_with_ratings_df.
 
 ### Results:
 <img width="818" alt="Screen Shot 2021-08-15 at 10 24 06 PM" src="https://user-images.githubusercontent.com/85847344/129515028-130bb3ef-2578-48c0-b908-ed9e7bf4adf0.png">
@@ -47,9 +47,10 @@ Amazing Prime loves the dataset and wants to keep it updated on a daily basis. B
 
 ## 4: Create the Movie Database
 ### Goal:
-    Use your knowledge of Python, Pandas, the ETL process, code refactoring, and PostgreSQL to add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
+    Add the movies_df DataFrame and MovieLens rating CSV data to a SQL database.
     
 ### Results:
+<img width="310" alt="movies_query" src="https://user-images.githubusercontent.com/85847344/129518685-ff13e1f4-97ee-4723-82ad-3885c3488ff7.png">
 
 
 

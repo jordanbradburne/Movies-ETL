@@ -52,6 +52,8 @@ Amazing Prime wants to keep an updated dataset on a daily basis. The goal is to 
 ### Results:
 <img width="310" alt="movies_query" src="https://user-images.githubusercontent.com/85847344/129518685-ff13e1f4-97ee-4723-82ad-3885c3488ff7.png">
 
+<img width="804" alt="ratings_query" src="https://user-images.githubusercontent.com/85847344/129522693-e977d25c-d8a0-44fa-8e83-dac546c74d0e.png">
+
 
 
 
